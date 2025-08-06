@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZIP3 Lite - Welcome</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+    header { background-color: #2196F3; color: white; padding: 1rem; text-align: center; }
+    nav { display: flex; justify-content: center; gap: 1rem; background-color: #e3f2fd; padding: 0.5rem; }
+    nav a { text-decoration: none; color: #333; font-weight: bold; }
+    section { padding: 1rem; }
+    .card { background: white; margin: 1rem 0; padding: 1rem; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .card h3 { margin-top: 0; }
+    .card ul { padding-left: 1.2rem; }
+    footer { background-color: #2196F3; color: white; text-align: center; padding: 1rem; position: fixed; bottom: 0; width: 100%; }
+    #chatbot { position: fixed; bottom: 80px; right: 20px; background-color: white; border: 1px solid #ccc; border-radius: 10px;
+               padding: 1rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 300px; display: none; }
+    #chatbot-toggle { position: fixed; bottom: 20px; right: 20px; background-color: #2196F3; color: white; border: none;
+                      border-radius: 50%; width: 50px; height: 50px; font-size: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ZIP3 Lite</h1>
+    <p>Business Finder by Noel Tech</p>
+  </header>
+  <nav>
+    <a href="#restaurants">Restaurants</a>
+    <a href="#salons">Salons</a>
+    <a href="#hotels">Hotels</a>
+    <a href="#motels">Motels</a>
+    <a href="#supermarkets">Supermarkets</a>
+  </nav>
+
+  <section id="restaurants">
+    <h2>🍽️ Restaurants</h2>
+    <div class="card">
+      <h3>Inzozi Restaurant</h3>
+      <p>Location: Nyamata, Bugesera</p>
+      <p>Phone: +250788000000</p>
+      <ul>
+        <li>Services: Local food, dinner meals, outdoor seating</li>
+        <li>Capacity: 50 seats, spacious area</li>
+        <li>Prices: Regular meal - 2500 RWF</li>
+      </ul>
+      <a href="https://www.google.com/maps?q=Inzozi+Restaurant+Nyamata">View on Map</a>
+    </div>
+  </section>
+
+  <section id="salons">
+    <h2>💇 Salons</h2>
+    <div class="card">
+      <h3>Maza Salon</h3>
+      <p>Location: KN 3 Ave, Kigali</p>
+      <p>Phone: +250788478395</p>
+      <ul>
+        <li>Services: Haircut, manicure, massage</li>
+        <li>Capacity: 5 staff, 7 chairs</li>
+        <li>Prices: Haircut - 1500 RWF</li>
+      </ul>
+      <a href="https://www.google.com/maps?q=Maza+Salon+Kigali">View on Map</a>
+    </div>
+  </section>
+
+  <button id="chatbot-toggle">💬</button>
+  <div id="chatbot">
+    <strong>ZIP3 Assistant:</strong>
+    <p>Hello! Ask your question and I’ll try to help you.</p>
+    <p><em>Example:</em> “Any hotels with swimming pool nearby?”</p>
+  </div>
+
+  <footer>
+    <p>ZIP3 Lite © 2025 - Powered by Noel Tech | <strong>Privacy & Terms</strong></p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('chatbot-toggle');
+    const chatbot = document.getElementById('chatbot');
+    toggleBtn.addEventListener('click', () => {
+      chatbot.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>
